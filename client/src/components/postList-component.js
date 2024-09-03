@@ -88,7 +88,7 @@ const PostListComponent = ({ currentUser }) => {
                         poster: {post.poster.username}
                       </p>
                       {currentUser && (
-                        <a
+                        /*                         <a
                           href="#"
                           id={post._id}
                           className="card-text btn btn-primary"
@@ -98,7 +98,14 @@ const PostListComponent = ({ currentUser }) => {
                           }}
                         >
                           Follow
-                        </a>
+                        </a> */
+                        <button
+                          id={post._id}
+                          className="card-text btn btn-primary"
+                          onClick={handleEnroll}
+                        >
+                          Follow
+                        </button>
                       )}
                     </div>
                   </div>
