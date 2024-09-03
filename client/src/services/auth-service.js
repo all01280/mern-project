@@ -1,6 +1,7 @@
 // 登入有關的功能 (2)
 import axios from "axios";
 const API_URL = "https://shareyourstory-api.onrender.com/api/user";
+//const API_URL = "https://http://localhost:8080/api/user";
 
 class AuthService {
   //登入 (3)

@@ -15,9 +15,12 @@ require("./config/passport")(passport);
 // 套用cors
 const cors = require("cors");
 
+const port = process.env.PORT || 8080;
+
 // 連結MongoDB
 mongoose
-  .connect(process.env.MONGODB_CONNECTION)
+  .connect("mongodb://localhost:27017/mernDB")
+  /*   .connect(process.env.MONGODB_CONNECTION) */
   .then(() => {
     console.log("連結到mongodb...");
   })
@@ -50,6 +53,6 @@ app.use(
 );
 
 // React已經用了3000，別重複
-app.listen(8080, () => {
+app.listen(port, () => {
   console.log("server listen port 8080");
 });

@@ -32,7 +32,7 @@ const RegisterComponent = () => {
         window.alert(
           "Registration successful. You will now be redirected to the login page."
         );
-        nav("/login");
+        nav("/register");
       })
       .catch((e) => {
         setMessage(e.response.data);
