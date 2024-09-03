@@ -67,7 +67,7 @@ const PostListComponent = ({ currentUser }) => {
         <div className="list-box">
           <p className="list-name">List:</p>
           <br />
-          {searchResult && searchResult.length != 0 && (
+          {searchResult && searchResult.length !== 0 && (
             <div style={{ display: "flex", flexWrap: "wrap" }}>
               {searchResult.map((post) => {
                 return (
@@ -92,7 +92,10 @@ const PostListComponent = ({ currentUser }) => {
                           href="#"
                           id={post._id}
                           className="card-text btn btn-primary"
-                          onClick={handleEnroll}
+                          onClick={(e) => {
+                            e.preventDefault(); // 防止默認行為
+                            handleEnroll(e);
+                          }}
                         >
                           Follow
                         </a>

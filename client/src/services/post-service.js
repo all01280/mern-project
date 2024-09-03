@@ -146,4 +146,6 @@ class PostService {
   }
 }
 
-export default new PostService();
+// 將實例分配給變量
+const postServiceInstance = new PostService();
+export default postServiceInstance; // 將變量導出

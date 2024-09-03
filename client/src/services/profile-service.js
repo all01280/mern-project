@@ -19,4 +19,6 @@ class ProfileService {
   }
 }
 
-export default new ProfileService();
+// 將實例分配給變量
+const profileServiceInstance = new ProfileService();
+export default profileServiceInstance; // 將變量導出

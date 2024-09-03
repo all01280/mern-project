@@ -13,4 +13,6 @@ class SearchService {
   }
 }
 
-export default new SearchService();
+// 將實例分配給變量
+const searchServiceInstance = new SearchService();
+export default searchServiceInstance; // 將變量導出

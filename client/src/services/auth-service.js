@@ -25,5 +25,6 @@ class AuthService {
     return JSON.parse(localStorage.getItem("user"));
   }
 }
-
-export default new AuthService();
+// 將實例分配給變量
+const authServiceInstance = new AuthService();
+export default authServiceInstance;
