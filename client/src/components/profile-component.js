@@ -4,7 +4,7 @@ import ProfileService from "../services/profile-service";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-const ProfileComponent = ({ currentUser, setCurrentUser }) => {
+const ProfileComponent = ({ currentUser }) => {
   let [message, setMessage] = useState("");
   // 用於更新用戶資料的狀態
   const [selectedProfile, setSelectedProfile] = useState(null);

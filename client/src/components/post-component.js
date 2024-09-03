@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "./post.css";
 
-const Postcomponent = ({ currentUser, setCurrentUser }) => {
+const Postcomponent = ({ currentUser }) => {
   let [message, setMessage] = useState("");
   // 導覽功能
   const nav = useNavigate();
@@ -136,7 +136,7 @@ const Postcomponent = ({ currentUser, setCurrentUser }) => {
                       <p style={{ margin: "0.5rem 0rem" }}>
                         Follow: {post.viewer.length}
                       </p>
-                      {currentUser && currentUser.user.role == "member" && (
+                      {currentUser && currentUser.user.role === "member" && (
                         <div>
                           <Button
                             variant="danger"

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import PostService from "../services/post-service";
 
-const FollowPostcomponent = ({ currentUser, setCurrentUser }) => {
+const FollowPostcomponent = ({ currentUser }) => {
   // 導覽功能
   const nav = useNavigate();
   const handleTakeToLogin = () => {

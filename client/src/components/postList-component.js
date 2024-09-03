@@ -4,13 +4,13 @@ import PostService from "../services/post-service";
 import SearchService from "../services/search-service";
 import "./postList.css";
 
-const PostListComponent = ({ currentUser, setCurrentUser }) => {
-  const navigate = useNavigate();
+const PostListComponent = ({ currentUser }) => {
+  /* const navigate = useNavigate(); */
   let [searchInput, setSearchInput] = useState("");
   let [searchResult, setSearchResult] = useState(null);
-  const handleTakeToLogin = () => {
+  /*   const handleTakeToLogin = () => {
     navigate("/login");
-  };
+  }; */
 
   const handleChangeInput = (e) => {
     setSearchInput(e.target.value);

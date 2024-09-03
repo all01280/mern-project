@@ -43,7 +43,7 @@ const CreatePostComponent = ({ currentUser, setCurrentUser }) => {
           </button>
         </div>
       )}
-      {currentUser && currentUser.user.role == "member" && (
+      {currentUser && currentUser.user.role === "member" && (
         <div className="form-group">
           <label for="exampleforTitle">Title：</label>
           <input
