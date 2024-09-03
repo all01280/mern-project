@@ -85,7 +85,7 @@ const NavComponent = ({ currentUser, setCurrentUser }) => {
                 )}
 
                 {/* // 登入後 & 符合身份條件 才會顯示 */}
-                {currentUser && currentUser.user.role == "member" && (
+                {currentUser && currentUser.user.role === "member" && (
                   <li className="nav-item">
                     <Link className="nav-link" to="/createPost">
                       Create Post

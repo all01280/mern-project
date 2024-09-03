@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+/* import { useNavigate } from "react-router-dom"; */
 import PostService from "../services/post-service";
 import SearchService from "../services/search-service";
 import "./postList.css";

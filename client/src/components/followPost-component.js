@@ -48,7 +48,7 @@ const FollowPostcomponent = ({ currentUser }) => {
           <div className="box-name">Followed Post</div>
           <br />
 
-          {currentUser && postData && postData.length != 0 && (
+          {currentUser && postData && postData.length !== 0 && (
             <div style={{ display: "flex", flexWrap: "wrap" }}>
               {postData.map((post) => {
                 return (
