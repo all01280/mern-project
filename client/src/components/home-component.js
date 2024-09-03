@@ -27,7 +27,7 @@ const HomeComponent = ({ currentUser }) => {
                   story heard together!
                 </p>
                 <button className="btn btn-outline-light" type="button">
-                  <Link className="nav-link" to="/login">
+                  <Link className="nav-link" to="/register">
                     Sign up
                   </Link>
                 </button>
