@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "http://localhost:8080/api/post";
+const API_URL = "https://shareyourstory-api.onrender.com/api/post";
 
 class PostService {
   // 新增文章
