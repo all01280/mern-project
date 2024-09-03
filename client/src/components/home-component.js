@@ -37,15 +37,15 @@ const HomeComponent = ({ currentUser }) => {
           {currentUser && (
             <div className="col-md-6">
               <div className="h-100 p-5 text-white bg-dark rounded-3">
-                <h2>Post Viewing</h2>
+                <h2>Let Every Story Be Heard</h2>
                 <p>
-                  Explore a diverse collection of articles from other users.
-                  Discover new perspectives and gain inspiration from stories
-                  shared by fellow writers.
+                  Whether you're writing poetry, short articles, or long
+                  stories, we offer an intuitive editor that makes your creative
+                  process enjoyable and effortless.
                 </p>
                 <button className="btn btn-outline-light" type="button">
-                  <Link className="nav-link" to="/postList">
-                    Post list
+                  <Link className="nav-link" to="/createPost">
+                    Share Story
                   </Link>
                 </button>
               </div>
@@ -53,14 +53,16 @@ const HomeComponent = ({ currentUser }) => {
           )}
           <div className="col-md-6">
             <div className="h-100 p-5 bg-light border rounded-3">
-              <h2>Let Every Story Be Heard</h2>
+              <h2>Post Viewing</h2>
               <p>
-                Whether you're writing poetry, short articles, or long stories,
-                we offer an intuitive editor that makes your creative process
-                enjoyable and effortless.
+                Explore a diverse collection of articles from other users.
+                Discover new perspectives and gain inspiration from stories
+                shared by fellow writers.
               </p>
               <button className="btn btn-outline-secondary" type="button">
-                Share Story
+                <Link className="nav-link" to="/postList">
+                  Post list
+                </Link>
               </button>
             </div>
           </div>
