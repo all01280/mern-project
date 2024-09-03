@@ -19,8 +19,8 @@ const port = process.env.PORT || 8080;
 
 // 連結MongoDB
 mongoose
-  .connect("mongodb://localhost:27017/mernDB")
-  /*   .connect(process.env.MONGODB_CONNECTION) */
+  /* .connect("mongodb://localhost:27017/mernDB") */
+  .connect(process.env.MONGODB_CONNECTION)
   .then(() => {
     console.log("連結到mongodb...");
   })
