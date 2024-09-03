@@ -1,0 +1,35 @@
+.my-post-top {
+  padding: 3rem;
+}
+
+.my-post {
+  display: flex;
+  justify-content: center;
+}
+
+.my-post .post-box {
+  width: 55%;
+}
+
+.my-post .post-box .box-name {
+  font-size: 2rem;
+  justify-content: flex-start;
+}
+
+/* 平板RWD */
+@media screen and (max-width: 1250px) {
+  .my-post .post-box {
+    width: 75%;
+  }
+}
+
+/* 手機RWD */
+@media screen and (max-width: 500px) {
+  .my-post-top {
+    padding: 1rem;
+  }
+
+  .my-post .post-box {
+    width: 100%;
+  }
+}

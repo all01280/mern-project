@@ -1,0 +1,54 @@
+.post-list {
+  padding: 3rem;
+}
+
+.post-list .search {
+  display: flex;
+
+  justify-content: center;
+}
+
+.post-list .search input {
+  padding: 10px 10px;
+  width: 30%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border: 1px solid rgb(201, 201, 201);
+}
+
+.post-list .list {
+  display: flex;
+  justify-content: center;
+}
+
+.post-list .list .list-box {
+  width: 55%;
+}
+
+.post-list .list .list-box .list-name {
+  font-size: 2rem;
+  justify-content: flex-start;
+}
+
+/* 平板RWD */
+@media screen and (max-width: 1250px) {
+  .post-list .search input {
+    width: 50%;
+  }
+  .post-list .list .list-box {
+    width: 75%;
+  }
+}
+
+/* 手機RWD */
+@media screen and (max-width: 500px) {
+  .post-list {
+    padding: 1rem;
+  }
+  .post-list .search input {
+    width: 70%;
+  }
+  .post-list .list .list-box {
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+.profile-top {
+  margin-top: 5rem;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-top .profile-box {
+  padding: 2rem;
+  width: 30%;
+  border-radius: 20px;
+  background-color: rgba(197, 197, 197, 0.144);
+}
+
+/* 平板RWD */
+@media screen and (max-width: 1250px) {
+  .profile-top .profile-box {
+    /*     padding: 1.5rem; */
+    width: 65%;
+  }
+}
+
+/* 手機RWD */
+@media screen and (max-width: 500px) {
+  .profile-top .profile-box {
+    padding: 1.5rem;
+    width: 90%;
+  }
+}

@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.create {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.create .form-group {
+  width: 50%;
+}
+
+input.form-control {
+  height: 3rem;
+}
+
+textarea.form-control {
+  height: 6rem;
+}
+
+@media screen and (max-width: 500px) {
+  .create .form-group {
+    width: 90%;
+  }
+  input.form-control {
+    height: 3rem;
+  }
+
+  textarea.form-control {
+    height: 9rem;
+  }
+}
